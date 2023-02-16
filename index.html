@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js" defer></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <title>Vice City</title>
   </head>
@@ -19,33 +20,52 @@
           </a>
 
           <ul class="d-flex list-inline gap-2 gap-md-4 gap-lg-5 align-items-center d-none d-md-block">
-            <li class="list-inline-item">
+            <li class="list-inline-item mx-3">
               <a class="text-light" href="#">Who We Are</a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item mx-3">
               <a class="text-light" href="#">What We Do</a>
             </li>
-            <button class="align-self-start fw-bolder py-1 py-md-2 px-2 px-md-4 rounded bg-info letter-spacing btn">CONTACT US</button>
+            <button class="mx-3 align-self-start fw-bolder py-1 py-md-2 px-2 px-md-4 rounded bg-info letter-spacing btn">CONTACT US</button>
           </ul>
         </nav>
-        <!-- <div class="container-sm px-2 px-md-3 px-lg-4 py-2 position-relative">
-        <p class="text-lowercase text-wrap xs-text position-absolute top-0 start-3 col-1 fs-code">
-          function dropRight(array, n=1) { const length = array == null ? 0 : array.length n = length - toInteger(n) return length ? slice(array, 0, n < 0 ? 0 : n) : [] } function castArray(...args) {
-          if (!args.length) { return [] } const value = args[0] return Array.isArray(value) ? value : [value] } function chunk(array, size = 1) { size = Math.max(toInteger(size), 0) const length =
-          array == null ? 0 : array.length if (!length || size < 1) { return [] } let index = 0 let resIndex = 0 const result = new Array(Math.ceil(length / size)) while (rdg < 995) {
-          result[resIndex++] = slice(array, index, (index += size)) } return result }
-        </p>
-        <div class="container">
-          <div class="header">
-            <p class="">Paving the way for innovative startups and entrepreneurs into the future of AI, Web 3, and beyond!</p>
-            <div class="triangles">
+        <div class="position-relative mt-5 px-5 row">
+          <div class="code text-muted header-code position-absolute d-none d-md-block">
+            <p class="fs-code">
+              function dropRight(array, n=1) { const length = array == null ? 0 : array.length n = length - toInteger(n) return length ? slice(array, 0, n < 0 ? 0 : n) : [] } <br />
+              <br />
+
+              function castArray(...args) { if (!args.length) { return [] } <br />
+              const value = args[0] return Array.isArray(value) ? value : [value] }<br />
+
+              function chunk(array, size = 1) { size = Math.max(toInteger(size), 0) <br />
+              const length = array == null ? 0 : array.length if (!length || size < 1) { return [] } <br />
+              <br />
+              let index = 0 let resIndex = 0 const result = new Array(Math.ceil(length / size)) <br />
+              while (rdg < 995) { result[resIndex++] = slice(array, index, (index += size)) } return result }
+            </p>
+          </div>
+
+          <div class="col-12 position-relative header-height">
+            <div class="header-triangles header-triangles-1">
               <img src="./assets/triangle.svg" alt="" class="img-fluid" />
-              <img src="./assets/thin-triangle.svg" alt="" class="img-fluid" />
+            </div>
+            <div class="header-triangles header-triangles-2">
               <img src="./assets/thin-triangle.svg" alt="" class="img-fluid" />
             </div>
+            <div class="header-triangles header-triangles-3">
+              <img src="./assets/thin-triangle.svg" alt="" class="img-fluid" />
+            </div>
+            <span class="position-absolute top-50 start-50 translate-middle gradient-shadow-lg"></span>
+          </div>
+          <div class="header-text text-center text-light">
+            <h1 class="text">Paving the way for innovative startups and entrepreneurs into the future of AI, Web 3, and beyond!</h1>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center my-5 py-5 pt-md-0">
+            <iconify-icon icon="fluent:chevron-double-down-16-regular" style="color: white" width="33" height="33"></iconify-icon>
           </div>
         </div>
-      </div> -->
       </header>
       <main>
         <!-- what we do start-->
@@ -73,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 row col-md-6 order-1 order-md-2 mt-5 mt-md-0">
+          <div class="col-12 row col-md-6 order-1 order-md-2 mt-5 mt-md-0 overflow-hidden">
             <div class="col-6 img-1 image">
               <img src="/assets/Rectangle1.png" alt="" class="img-fluid h-100" />
             </div>
@@ -85,7 +105,9 @@
                 function dropRight(array, n=1) { const length = array == null ? 0 : array.length n = length - toInteger(n) return length ? slice(array, 0, n < 0 ? 0 : n) : [] } <br />
                 <br />
 
-                function castArray(...args) { if (!args.length) { return [] } const value = args[0] return Array.isArray(value) ? value : [value] }<br />
+                function castArray(...args) { if (!args.length) { return [] }
+                <br />
+                const value = args[0] return Array.isArray(value) ? value : [value] }<br />
 
                 function chunk(array, size = 1) { size = Math.max(toInteger(size), 0) const length = array == null ? 0 : array.length if (!length || size < 1) { return [] } <br />
                 <br />
@@ -152,30 +174,31 @@
             </p>
             <div class="d-flex gap-3 gap-md-4 gap-lg-5 align-items-center px-2 mt-4">
               <h5>Are you ready to join efforts?</h5>
-              <button class="fw-bolder py-1 py-md-2 px-1 px-md-3 rounded bg-info btn">CONTACT US</button>
+              <button class="fw-bolder py-2 py-md-2 px-2 px-md-3 rounded bg-info btn">CONTACT US</button>
             </div>
           </div>
         </section>
         <!-- future awaits end -->
         <!-- vice city labs start -->
-        <section class="px-md-4 px-lg-5 row mt-4 mt-lg-5 justify-content-center pb-5">
+        <section class="px-md-4 px-lg-5 row mt-4 mt-lg-5 justify-content-center pb-5 position-relative">
+          <span class="position-absolute top-0 gradient-shadow-event"></span>
           <div class="col-md-6 col-12 mt-5 text-light order-2 order-md-1">
             <h1 class="text-underline gradient-underline d-inline text-light">Vice City Labs</h1>
-            <p class="my-4 col-12 col-md-10">
+            <p class="my-4 col-12 col-md-10 fs-5">
               <span class="fw-bolder letter-spacing-sm">We help entrepreneurs to build million-dollar startups </span>
               <span class="fs-6 text-muted">and bring the future of Artificial Intelligence and Web 3 into the present.</span>
             </p>
-            <div class="my-2 rounded col-12 col-md-10 p-2 pe-5 quote">
+            <div class="my-2 rounded col-12 col-md-10 p-4 pe-5 quote">
               <span>
                 <img src="./assets/quote.svg" alt="" class="img-fluid" />
               </span>
-              <i>Vice City Labs is a holistic incubation program looking to partner with founders eager to build memorable companies!</i>
+              <p class="fs-6">Vice City Labs is a holistic incubation program looking to partner with founders eager to build memorable companies!</p>
             </div>
           </div>
-          <div class="col-md-6 col-12 position-relative d-flex justify-content-center align-items-center order-1 order-md-2 mb-3">
-            <img src="./assets/thin-triangle.svg" alt="" class="col-11 mt-5 position-absolute z-index-1" />
-            <img src="./assets/thin-triangle.svg" alt="" class="col-11 mt-5 position-absolute z-index-1" />
-            <img src="./assets/labs.png" alt="" class="img-fluid z-index-2" />
+          <div class="col-md-5 col-11 position-relative d-flex justify-content-center align-items-center order-1 order-md-2 mb-3 mt-5 mt-md-0">
+            <img src="./assets/thin-triangle.svg" alt="" class="col-11 mt-5 position-absolute" />
+            <img src="./assets/thin-triangle.svg" alt="" class="col-11 mt-5 position-absolute" />
+            <img src="./assets/labs.png" alt="" class="img-fluid rounded-3" />
           </div>
         </section>
         <!-- vice city labs end -->
@@ -184,53 +207,58 @@
           <h1 class="text-light text-center">This is how we will help you</h1>
           <div class="container-sm row px-md-4 px-lg-5 justify-content-center mt-5 gap-3">
             <div class="text-light col-md-5 col-12 p-4 card-blur rounded pb-4">
-              <div class="col-1 rounded-circle">
-                <img src="./assets/pencil.svg" alt="" class="img-fluid" />
+              <div class="col-1 rounded-circle my-2 d-flex justify-content-center align-items-center social-bg">
+                <iconify-icon icon="material-symbols:dashboard-rounded" style="color: #5ef8ff" width="33" height="33"></iconify-icon>
               </div>
               <div>
-                <h5>State-of-the-art software development.</h5>
+                <h5>State-of-the-art software development</h5>
                 <p class="text-secondary">We count on more than 40 veteran developers ready to help you code the future.</p>
               </div>
             </div>
-            <div class="text-light col-md-5 col-12 p-4  card-blur rounded pb-4">
-              <div class="col-1 rounded-circle">
-                <img src="./assets/pencil.svg" alt="" class="img-fluid" />
+            <div class="text-light col-md-5 col-12 p-4 card-blur rounded pb-4">
+              <div class="col-1 rounded-circle my-2 d-flex justify-content-center align-items-center social-bg">
+                <iconify-icon icon="quill:paper" style="color: #5ef8ff" width="32" height="32"></iconify-icon>
               </div>
               <div>
                 <h5>Cutting-edge UI/UX design</h5>
                 <p class="text-secondary">“You never get a second chance to make a good first impression.” We ensure both your product´s appearance and usability are nothing less than excellent.</p>
               </div>
             </div>
-            <div class="text-light col-md-5 col-12 p-4  card-blur rounded pb-4">
-              <div class="col-1 rounded-circle">
-                <img src="./assets/pencil.svg" alt="" class="img-fluid" />
+            <div class="text-light col-md-5 col-12 p-4 card-blur rounded pb-4">
+              <div class="col-1 rounded-circle my-2 d-flex justify-content-center align-items-center social-bg">
+                <iconify-icon icon="fa:balance-scale" style="color: #5ef8ff" width="33" height="33" class="blur rounded-circle"></iconify-icon>
               </div>
               <div>
-                <h5>Legal Structure.</h5>
+                <h5>Legal Structure</h5>
                 <p class="text-secondary">Your company's legal structure is the cornerstone upon which your entire project will be built. We will help you get this right!</p>
               </div>
             </div>
-            <div class="text-light col-md-5 col-12 p-4  card-blur rounded pb-4">
-              <div class="col-1 rounded-circle">
-                <img src="./assets/pencil.svg" alt="" class="img-fluid" />
+            <div class="text-light col-md-5 col-12 p-4 card-blur rounded pb-4">
+              <div class="col-1 rounded-circle my-2 d-flex justify-content-center align-items-center social-bg">
+                <iconify-icon icon="healthicons:i-certificate-paper-outline" style="color: #5ef8ff" width="33" height="33"></iconify-icon>
               </div>
               <div>
                 <h5>10 years of success in the tech industry.</h5>
-                <p class="text-secondary">After ten years, you learn how to successfully navigate the exciting and challenging waters of the business world. Let us help you with the orientation of your journey.</p>
+                <p class="text-secondary">
+                  After ten years, you learn how to successfully navigate the exciting and challenging waters of the business world. Let us help you with the orientation of your journey.
+                </p>
               </div>
             </div>
-            <div class="text-light col-md-5 col-12 p-4  card-blur rounded pb-4">
-              <div class="col-1 rounded-circle">
-                <img src="./assets/pencil.svg" alt="" class="img-fluid" />
+            <div class="text-light col-md-5 col-12 p-4 card-blur rounded pb-4">
+              <div class="col-1 rounded-circle my-2 d-flex justify-content-center align-items-center social-bg">
+                <iconify-icon icon="mdi:web" style="color: #5ef8ff" width="33" height="33"></iconify-icon>
               </div>
               <div>
                 <h5>Online growth hacking</h5>
-                <p class="text-secondary">Great ideas die because they never reach the right audience; this will not be your case. We will build your online presence to ensure your offer reaches hundreds of thousands of leads.</p>
+                <p class="text-secondary">
+                  Great ideas die because they never reach the right audience; this will not be your case. We will build your online presence to ensure your offer reaches hundreds of thousands of
+                  leads.
+                </p>
               </div>
             </div>
-            <div class="text-light col-md-5 col-12 p-4  card-blur rounded pb-4">
-              <div class="col-1 rounded-circle">
-                <img src="./assets/pencil.svg" alt="" class="img-fluid" />
+            <div class="text-light col-md-5 col-12 p-4 card-blur rounded pb-4">
+              <div class="col-1 rounded-circle my-2 d-flex justify-content-center align-items-center social-bg">
+                <iconify-icon icon="fa6-regular:handshake" style="color: #5ef8ff" width="30" height="30"></iconify-icon>
               </div>
               <div>
                 <h5>Seed capital.</h5>
@@ -240,6 +268,269 @@
           </div>
         </section>
         <!-- how will help end -->
+        <!-- schedule starts -->
+        <section class="px-md-4 px-lg-5 mt-4 mt-lg-5 d-flex flex-column justify-content-center pb-md-5 text-light col-md-9 mx-auto col-12">
+          <h2 class="text-center fs-2">
+            Vice City Labs is mainly focused on early-stage startups providing technological solutions through the usage of Artificial Intelligence and Web 3 in ANY type of industry!
+          </h2>
+          <p class="my-4 col-12 col-md-9 text-center mx-auto">
+            <span class="fw-bolder letter-spacing-sm"
+              >If you think our incubation program brings the missing parts of the puzzle you are looking to solve, Let's take the first step and schedule a discovery call!
+            </span>
+            <span class="fs-6 text-muted">We may be one meeting away from starting the next BIG million-dollar startup!</span>
+          </p>
+          <button class="fw-bolder py-1 py-md-2 px-2 px-md-4 rounded bg-info letter-spacing btn mx-auto">Schedule a Call</button>
+        </section>
+        <!-- schedule ends -->
+        <!-- partners start -->
+        <section class="px-md-4 px-lg-5 mt-md-4 mt-lg-5 d-flex justify-content-center pb-5 text-light position-relative row">
+          <div class="col-4 position-absolute start-50 top-5">
+            <img src="./assets/thin-triangle.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md-6 col-12 mt-5 pt-5">
+            <h1>Meet Your New Partners</h1>
+            <p class="fs-6">
+              Since 2015, Lawrence Mansour, Belbron Emanoel, and Steven Harris have been running EZ-AD and scaling several successful companies to more than a million dollars in annual recurring
+              revenue. At its core, they are hard-core entrepreneurs capable of executing any new project, regardless of the scope.
+            </p>
+            <p class="fs-6">Now, all that experience is being directed into Vice City Labs to incubate, build and scale the most memorable companies involved in the usage of AI and Web 3.</p>
+          </div>
+          <div class="col-md-6 col-12 d-flex justify-content-center align-items-center p-4">
+            <div class="col-5 d-flex flex-column justify-content-center align-items-center align-items-md-end gap-md-3 gap-2">
+              <div class="col-md-7 col-9 rounded-3 position-relative">
+                <img src="./assets/Rectangle155.png" alt="" class="img-fluid rounded-3 opacity-75" />
+                <p class="position-absolute bottom-0 ms-2">Lawrence Mansour</p>
+              </div>
+              <div class="col-md-7 col-9 rounded-3 position-relative">
+                <img src="./assets/Rectangle156.png" alt="" class="img-fluid rounded-3 opacity-75" />
+                <p class="position-absolute bottom-0 ms-2">Steven Harris</p>
+              </div>
+            </div>
+            <div class="ms-4">
+              <div class="col-md-8 col-8 rounded-3 position-relative">
+                <img src="./assets/Rectangle157.png" alt="" class="img-fluid rounded-3 opacity-75" />
+                <p class="position-absolute bottom-0 ms-2">Belbron Emanoel</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- partners end -->
+
+        <!-- ready to meet start -->
+        <section class="px-md-4 px-lg-5 mt-md-4 mt-lg-5 pb-5 text-light d-flex flex-column justify-content-center align-items-center gap-md-5 gap-3">
+          <h1 class="letter-spacing fw-bold">Ready to meet us?</h1>
+          <button class="fw-bolder py-1 py-md-2 px-2 px-md-4 rounded bg-info letter-spacing btn mx-auto">Schedule a Call</button>
+        </section>
+        <!-- ready to meet ends -->
+        <!-- events start -->
+        <section class="px-md-4 px-lg-5 mt-md-4 mt-lg-5 pb-md-5 text-light row justify-content-center mt-3 position-relative">
+          <div class="col-md-7 col-12 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-underline gradient-underline d-inline text-center mb-4">Vice City Events</h1>
+            <p class="text-center letter-spacing-sm fs-5">
+              We inspire change by fostering meaningful conversations about the present and the future of disruptive technologies in the entrepreneurial world.
+            </p>
+            <span class="position-absolute end-0 gradient-shadow-event"></span>
+          </div>
+
+          <div class="row mt-5 py-4">
+            <div class="col-md-6 col-12 mt-3">
+              <h1 class="col-md-9 col-12">Are you joining us at our next event?</h1>
+              <div>
+                <p>
+                  Once a month, Vice City Ventures organizes its networking mixer event in beautiful Santa Monica, California, where investors, entrepreneurs, and talented people meet to become part
+                  of the discussion about AI and Web 3!
+                </p>
+                <p>
+                  Whether you are looking for your next business partner, hoping to raise capital, or just want to meet new like-minded friends, <span class="fw-bolder">this event is for you!</span>
+                </p>
+              </div>
+              <div class="form-blur rounded-3 p-4 mt-5">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="">
+                    <iconify-icon icon="material-symbols:mail-outline-rounded" style="color: #5ef8ff" width="33" height="33"></iconify-icon>
+                  </div>
+
+                  <div>
+                    <h6>Join our email list to stay updated on coming events</h6>
+                    <p>We promise to keep our emails concise.</p>
+                  </div>
+                </div>
+
+                <form class="row g-3">
+                  <div class="col-8">
+                    <input type="email" class="form-control white-gradient text-light" id="email" placeholder="Write you email" />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-info mb-3 letter-spacing-sm fw-bolder">SUBMIT</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12 row d-flex flex-column align-items-center">
+              <div class="d-flex align-items-end">
+                <div class="col-md-7 col-8 rounded-3 event-image-1">
+                  <img src="./assets/Rectangle236.png" alt="" class="img-fluid rounded-3" />
+                </div>
+                <div class="col-md-5 col-6 rounded-3 event-image event-image-2">
+                  <img src="./assets/Rectangle238.png" alt="" class="img-fluid rounded-3" />
+                </div>
+              </div>
+              <div class="col-md-10 col-12 rounded-3 d-flex justify-content-center event-image event-image-3">
+                <img src="./assets/Rectangle237.png" alt="" class="img-fluid rounded-3" style="height: 90%" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- events end -->
+
+        <!-- slider starts -->
+        <section class="px-md-4 px-lg-5 mt-md-4 mt-lg-5 pb-5 text-light d-flex align-items-center justify-content-center">
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <div class="mt-5 d-none d-md-block">
+              <iconify-icon icon="ic:round-chevron-left" style="color: white" width="33" height="33"></iconify-icon>
+            </div>
+            <div class="row gy-5">
+              <div class="d-flex flex-column gap-2 col-6 col-md-3">
+                <div class="d-flex align-items-center gap-2">
+                  <iconify-icon icon="uil:calender" style="color: white" width="23" height="23"></iconify-icon>
+                  <span class="fs-6">Jun 8, 2022</span>
+                </div>
+                <div>
+                  <img src="./assets/image2.png" alt="" class="img-fluid rounded-3" />
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-2 col-6 col-md-3">
+                <div class="d-flex align-items-center gap-2">
+                  <iconify-icon icon="uil:calender" style="color: white" width="23" height="23"></iconify-icon>
+                  <span class="fs-6">Aug 26, 2022</span>
+                </div>
+                <div>
+                  <img src="./assets/image3.png" alt="" class="img-fluid rounded-3" />
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-2 col-6 col-md-3">
+                <div class="d-flex align-items-center gap-2">
+                  <iconify-icon icon="uil:calender" style="color: white" width="23" height="23"></iconify-icon>
+                  <span class="fs-6">Oct 17, 2022</span>
+                </div>
+                <div>
+                  <img src="./assets/image4.png" alt="" class="img-fluid rounded-3" />
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-2 col-6 col-md-3">
+                <div class="d-flex align-items-center gap-2">
+                  <iconify-icon icon="uil:calender" style="color: white" width="23" height="23"></iconify-icon>
+                  <span class="fs-6">Oct 20, 2022</span>
+                </div>
+                <div>
+                  <img src="./assets/image5.png" alt="" class="img-fluid rounded-3" />
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 d-none d-md-block">
+              <iconify-icon icon="ic:round-chevron-right" style="color: white" width="33" height="33"></iconify-icon>
+            </div>
+          </div>
+        </section>
+        <!-- slider ends -->
+
+        <!-- contact Us starts -->
+        <section class="position-relative row mt-5 pt-5">
+          <div class="code text-muted absolute position-absolute d-none d-md-block">
+            <p class="fs-code">
+              function dropRight(array, n=1) { const length = array == null ? 0 : array.length n = length - toInteger(n) return length ? slice(array, 0, n < 0 ? 0 : n) : [] } <br />
+              <br />
+
+              function castArray(...args) { if (!args.length) { return [] } const value = args[0] return Array.isArray(value) ? value : [value] }<br />
+
+              function chunk(array, size = 1) { size = Math.max(toInteger(size), 0) <br />
+              const length = array == null ? 0 : array.length if (!length || size < 1) { return [] } <br />
+              <br />
+              let index = 0 let resIndex = 0 const result = new Array(Math.ceil(length / size)) <br />
+              while (rdg < 995) { result[resIndex++] = slice(array, index, (index += size)) } return result }
+            </p>
+          </div>
+
+          <div class="col-12 d-flex justify-content-center">
+            <div class="col-md-7 col-12 px-2 px-md-4 px-lg-5 text-light">
+              <div class="col-md-9 col-12 mx-auto text-center">
+                <h1 class="fw-bolder text-center text-underline gradient-underline d-inline">Are you interested in</h1>
+                <br />
+                <h1 class="fw-bolder text-center text-underline gradient-underline d-inline">our Incubation program?</h1>
+                <p class="col-10 text-center mx-auto mt-4">Schedule a discovery call with us; We look forward to meeting you!</p>
+              </div>
+
+              <form>
+                <div class="mb-4">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control white-gradient text-light" id="exampleFormControlInput1" placeholder="name@example.com" />
+                </div>
+                <div class="mb-4">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control white-gradient text-light" id="phone" placeholder="Phone Number" />
+                </div>
+                <div class="mb-4">
+                  <label for="company-name" class="form-label">Company Name</label>
+                  <input type="email" class="form-control white-gradient text-light" id="company-name" placeholder="Company Name" />
+                </div>
+                <div class="mb-4">
+                  <label for="exampleFormControlTextarea1" class="form-label">Tell us about your startup</label>
+                  <textarea
+                    class="form-control white-gradient text-light"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="What’s the problem it aims to solve, and why it's an exciting idea."
+                  ></textarea>
+                </div>
+                <div class="mb-4">
+                  <div class="mb-1">
+                    <label for="exampleFormControlTextarea1" class="form-label">How much revenue does your company have?</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                    <label class="form-check-label" for="inlineRadio1">Less than $10,000</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                    <label class="form-check-label" for="inlineRadio1">Between $10,000 and $50,000</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                    <label class="form-check-label" for="inlineRadio1">More than $50,000</label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="exampleFormControlTextarea1" class="form-label">How would you describe the main struggles your startup is currently facing?</label>
+                  <textarea class="form-control white-gradient text-light" id="exampleFormControlTextarea1" rows="3" placeholder="Describe the main struggles"></textarea>
+                </div>
+                <div class="mb-4">
+                  <label for="exampleFormControlTextarea1" class="form-label">What do you expect to gain with our incubation program and help in case we are a good fit to work together?</label>
+                  <textarea class="form-control white-gradient text-light" id="exampleFormControlTextarea1" rows="3" placeholder="Describe what you expect to gain with our help"></textarea>
+                </div>
+                <div class="col-auto d-flex justify-content-end">
+                  <button type="submit" class="btn btn-info px-md-4 py-md-2 mb-3 letter-spacing-sm fw-bolder align-self-end">SUBMIT</button>
+                </div>
+              </form>
+              <div class="text-light mt-5 d-flex flex-column justify-content-center align-items-center position-relative">
+                <div class="d-flex justify-content-center align-items-center gap-5 py-5">
+                  <div class="mx-3 social-bg rounded-circle">
+                    <iconify-icon icon="uit:facebook-f" style="color: #0dcaf0" width="33" height="33"></iconify-icon>
+                  </div>
+                  <div class="mx-3 social-bg rounded-circle">
+                    <iconify-icon icon="ph:twitter-logo" style="color: #0dcaf0" width="33" height="33"></iconify-icon>
+                  </div>
+                  <div class="mx-3 social-bg rounded-circle">
+                    <iconify-icon icon="ion:logo-instagram" style="color: #0dcaf0" width="33" height="33"></iconify-icon>
+                  </div>
+                </div>
+                <p>Copyright © 2022 ViceCity Ventures</p>
+                <span class="position-absolute bottom-0 gradient-shadow-lg"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact Us ends-->
       </main>
       <footer></footer>
     </div>
