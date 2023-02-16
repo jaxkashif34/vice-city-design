@@ -24,7 +24,7 @@ a:hover {
   height: 50% !important;
 }
 .img-1 {
-  transform: translate(25%, 20%);
+  transform: translate(25%, 25%);
   z-index: 3;
 }
 .img-2 {
@@ -36,12 +36,12 @@ a:hover {
   z-index: 2;
 }
 .code {
-  transform: translate(83%, 22%);
+  transform: translate(83%, 0%);
 }
 
 .absolute,
 .header-code {
-  width: 7%;
+  width: 8%;
   height: 13%;
   top: 0%;
   left: 0% !important;
@@ -53,7 +53,9 @@ a:hover {
 
 .header-triangles {
   position: absolute;
-  top: 50%;
+  width: 45%;
+  height: 45%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -68,17 +70,16 @@ a:hover {
 .header-text {
   position: absolute;
   width: 70%;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -90%);
+  transform: translate(-50%, -50%);
 }
 
 .header-text .text {
-  font-size: 3.5rem;
-
+  font-size: 3rem;
 }
 
-.header-height{
+.header-height {
   height: 80vh;
 }
 .z-index-1 {
@@ -108,25 +109,32 @@ a:hover {
 }
 
 .event-image-1 {
+  transform: translate(25%, 0%);
   z-index: 2;
 }
 
 .event-image-2 {
-  transform: translate(-25%, 20%);
+  transform: translate(0%, 10%);
   z-index: 3;
 }
 .event-image-3 {
-  transform: translate(0%, -15%);
+  transform: translate(10%, -15%);
   z-index: 1;
 }
 
-.social-bg {
+.social-bg,
+.help-bg {
   backdrop-filter: blur(5px);
   background-color: rgba(94, 248, 255, 0.1);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   display: grid;
   place-content: center;
+}
+
+.help-bg {
+  width: 3rem;
+  height: 3rem;
 }
 
 .gradient-shadow-lg {
@@ -161,7 +169,7 @@ a:hover {
     transform: translate(15%, -10%) scale(1.2);
   }
   .code {
-    transform: translate(10%, 22%);
+    transform: translate(10%, 10%);
   }
   .event-image-3 > img {
     height: 80%;
@@ -169,15 +177,16 @@ a:hover {
   .header-text {
     width: 100%;
   }
-  .header-text .text{
-    font-size: 2.5rem;
+  .header-text .text {
+    font-size: 2rem;
   }
-  .header-height{
+  .header-height {
     height: 50vh;
   }
-  .header-triangles{
-    width: 80%;
-    top: 65%;
+  .header-triangles {
+    width: 100%;
+    width: 100%;
+    top: 40%;
   }
 }
 
